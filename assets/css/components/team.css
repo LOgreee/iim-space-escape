@@ -1,0 +1,50 @@
+/* LIST */
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* MEMBER */
+.member{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.member>img{
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.member>div{
+    width: 75%;
+}
+
+    .member>div>h3{
+        font-size: 1.7em;
+        margin: 0;
+        transition: ease-in-out 0.2s;
+        font-weight: 700;
+    }
+
+    .member:hover>div>h3{
+        cursor: pointer;
+        background-image: radial-gradient(circle, rgba(29,51,69,1) 0%, rgba(41,103,153,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+/* Tablette */
+@media screen and (max-width:800px){
+    .team{
+        grid-template-columns: 1fr;
+    }
+}

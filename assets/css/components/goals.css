@@ -1,0 +1,71 @@
+/* CONTAINER */
+.goalscontainer{
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+/* LIST */
+.goals{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+/* CARDS */
+.goal{
+    display: inline-block;
+    width: 400px !important;
+    padding: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #EEE;
+}
+
+    .goal:hover{
+        cursor: pointer;
+    }
+
+.goal>h3{
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.goal>.current{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.goal>.objectif{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+    /* VARIANT */
+    .goal.finish{
+        background: #1D3345;
+        color: #FFF;
+    }
+
+    .goal.finish>.current{
+        font-size: 1.5em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+/* Tablette */
+@media screen and (max-width:800px){
+    .goalscontainer{
+        overflow-x: overlay;
+    }
+    
+    .goal{
+        width: 250px !important;
+    }
+}

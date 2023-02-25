@@ -1,0 +1,19 @@
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: rgb(29,51,69);
+    background: linear-gradient(0deg, rgba(29,51,69,1) 15%, rgba(255,255,255,0) 100%);
+}
+
+.main-footer>.button{
+    color: #FFF;
+    border: solid 1px #FFF;
+}
+
+    .main-footer>.button:hover{
+        color: #1D3345;
+        background: #FFF;
+    }

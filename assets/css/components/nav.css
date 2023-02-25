@@ -1,0 +1,52 @@
+nav{
+    display: block;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+    background-color: #FFF;
+    background-image: url(../../images/icon_maquette.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    overflow: none;
+    transform: translateX(105px);
+    transition: ease-in-out 0.2s;
+}
+    
+    nav.active{
+        transform: translateX(0);
+        transition: ease-in-out 0.2s;
+    }
+
+    nav:hover{
+        cursor: pointer;
+        animation: roll 1.5s;
+    }
+
+@keyframes roll{
+    from{
+        background-position-y: center;
+    }
+    45%{
+        background-position-y: -4em;
+        background-position-x: center;
+    }
+    46%{
+        background-position-x: 4em;
+    }
+    54%{
+        background-position-y: +8em;
+        background-position-x: 4em;
+    }
+    55%{
+        background-position-x: center;
+    }
+    to{
+        background-position-y: center;
+    }
+}

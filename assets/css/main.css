@@ -1,0 +1,66 @@
+/* IMPORT COMPONENT */
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/container.css");
+@import url("components/footer.css");
+@import url("components/goals.css");
+@import url("components/marketingcom.css");
+@import url("components/nav.css");
+@import url("components/team.css");
+
+/* Base element */
+*{
+    font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    padding: 40px 10%;
+    min-height: calc(100vh - 106px - 40px);
+}
+
+main>section{
+    margin-bottom: 200px;
+}
+
+main iframe{
+    height: 60vh;
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1, h2{
+    font-size: 2em;
+    color: #1D3345;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+img, iframe{
+    border-radius: 20px;
+    width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Tablette */
+@media screen and (max-width:800px){
+    main{
+        min-height: calc(100vh - 106px - 146px);
+    }
+}

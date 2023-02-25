@@ -1,0 +1,40 @@
+.banner{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    background: #1D3345;
+    background-color: #FFF;
+    background-image: url(../../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    padding: 30px 105px 30px 50vw;
+    margin-bottom: 300px;
+    -webkit-box-shadow: 0px 200px 300px 5px rgba(206,214,222,1); 
+    box-shadow: 0px 200px 300px 5px rgba(206,214,222,1);
+}
+
+/* Content */
+.banner>h1{
+    text-align: right;
+    color: #FFF;
+    font-size: 7em;
+    margin: 10px 0;
+}
+
+
+/* Tablette */
+@media screen and (max-width:800px){
+    .banner{
+        align-items: stretch;
+        padding: 30px;
+        margin-bottom: 300px;
+    }
+    
+    .banner>h1{
+        text-align: left;
+        font-size: 5em;
+    }
+}

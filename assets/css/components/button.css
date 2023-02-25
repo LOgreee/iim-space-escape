@@ -1,0 +1,24 @@
+.button{
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #878787;
+    border: solid 1px #878787;
+    border-radius: 200px;
+    transition: ease-in-out 0.2s;
+}
+    .button:hover{
+        color: #FFF;
+        background: #878787;
+    }
+
+/* VARIANT */
+.banner>.button{
+    color: #FFF;
+    border: solid 1px #FFF;
+}
+
+    .banner>.button:hover{
+        color: #1D3345;
+        background: #FFF;
+    }
