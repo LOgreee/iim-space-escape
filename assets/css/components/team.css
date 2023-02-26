@@ -17,12 +17,13 @@
 .member>img{
     width: 25%;
     height: 100%;
+    margin-right: 5%;
     object-fit: contain;
     object-position: center;
 }
 
 .member>div{
-    width: 75%;
+    width: 70%;
 }
 
     .member>div>h3{
