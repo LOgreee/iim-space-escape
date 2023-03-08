@@ -48,6 +48,8 @@ footer>*{
     }
     
     footer>section{
+        flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 20px;
     }
 }
